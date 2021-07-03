@@ -33,3 +33,7 @@ module.exports.storeDocumentPost = async function (req, res) {
         res.status(408).json(error);
     }
 }
+
+module.exports.test = async function (req, res) {
+    res.status(200).json({ "Succes": "TRUE" });
+}

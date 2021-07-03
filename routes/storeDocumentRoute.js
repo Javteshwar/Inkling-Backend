@@ -7,4 +7,6 @@ router.get('/api/get-store-documents', documentController.storeDocumentsListGet)
 
 router.post('/api/post-store-document', documentController.storeDocumentPost);
 
+router.get('/api/test', documentController.test);
+
 module.exports = router;
