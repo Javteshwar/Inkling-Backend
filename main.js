@@ -21,7 +21,10 @@ mongoose.connect(
     }).catch(e => {
         console.log('Error Occured', e);
     });
-
+app.get("/", function(req, res) {
+  //when we get an http get request to the root/homepage
+  res.send("Hello World");
+});
 app.use(authRoute);
 app.use(userDocumentRoute);
 app.use(storeDocumentRoute);
