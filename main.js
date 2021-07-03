@@ -16,8 +16,8 @@ mongoose.connect(
         useUnifiedTopology: true,
         useFindAndModify: false
     }).then(() => {
-        app.listen(3333);
-        console.log('Listening at Port 3333');
+        app.listen(process.env.PORT||3333);
+        console.log('Listening at Some Port');
     }).catch(e => {
         console.log('Error Occured', e);
     });
