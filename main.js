@@ -7,7 +7,7 @@ const storeDocumentRoute = require('./routes/storeDocumentRoute');
 
 app.use(express.json());
 //Connect Database
-const dbUri = 'mongodb+srv://javteshwar:pass123@testcluster.1ap0s.mongodb.net/inkling-personal'
+const dbUri = process.env.DATABASE_URI;
 mongoose.connect(
     dbUri,
     {
